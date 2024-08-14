@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>@ViewData["Title"]</h2>
+        <div class="alert alert-info" role="alert">
+            @ViewData["Message"]
+        </div>
+        <a href="@Url.Action("Login", "Seller")" class="btn btn-primary">Login</a>
+        <a href="@Url.Action("Signup", "Seller")" class="btn btn-secondary">Sign Up</a>
+    </div>
+</body>
+</html>
